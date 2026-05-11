@@ -1,0 +1,3 @@
+﻿pytest==8.4.0
+selenium==4.31.0
+webdriver-manager==4.0.2
