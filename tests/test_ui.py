@@ -32,7 +32,7 @@ def test_empty_form_shows_error(driver):
 
 
 def test_invalid_email_shows_error(driver):
-    driver.find_element(By.ID, "name").send_keys("Иван!!!")
+    driver.find_element(By.ID, "name").send_keys("Иван")
     driver.find_element(By.ID, "email").send_keys("ivanmail.com")
     driver.find_element(By.ID, "submit").click()
     assert driver.find_element(By.ID, "result").text == "Проверьте данные"
